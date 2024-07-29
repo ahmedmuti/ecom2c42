@@ -4,6 +4,9 @@ import { bootstrap } from "./src/modules/bootstrap.js"
 import { globalError } from './src/middleware/globalError.js'
 import { AppError } from "./src/utils/appError.js"
 import cors from "cors"
+import Stripe from 'stripe';
+const stripe = new Stripe('sk_test_51PgRqfKjuca3jxtgL39PODU7ct8qKOFouNAYRaBC3gqt12m0UNfWLpFxYEIgiCnJ59f8O9otUnihRPM7DrNo3rTu00GpovWO1z');
+
 // import dotenv from "dotenv"
 // dotenv.config()
 import 'dotenv/config'
